@@ -1,0 +1,34 @@
+How many knows about contenteditable?
+Start with contenteditable div.
+"Save this to local storage yada yada".
+
+Normal people would stop here. Normal is boring, let's be unormal!
+
+editable title?
+
+style tag display block.
+where this is going?
+contenteditable style tag.
+text-shadow
+
+Unormal people would just stop here, right? But unnormal is boring! This is Uppsala.JS! Let's be weird!
+
+let's render a script tag!
+content editable :(
+onBlur
+
+console.log to prove it works!
+
+google fonts!!
+
+say
+
+css is all about styles
+say pretty
+
+base64 image editable?
+
+Weird people would just stop here...
+
+canvas to console.log
+innerHTML to canvas
