@@ -1,0 +1,7 @@
+// google font
+var style = document.getElementsByTagName("style")[0];
+var css = style.innerText;
+if(css.indexOf("import") == -1) {
+    var niceFont = "@import url('https://fonts.googleapis.com/css?family=Inconsolata'); script { font-family: 'Inconsolata';}";
+    style.innerText = niceFont + css;
+}

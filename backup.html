@@ -10,80 +10,79 @@
 
 <body>
 <style contenteditable>
-    html,
-    body {
-        min-width: 100%;
-        min-height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow:auto;
-    }
+html,
+body {
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+}
 
-    body {
-        background: #eee;
-        border: 50px solid green;
-        box-sizing: border-box;
-    }
+body {
+    background: #eee;
+    border: 50px solid green;
+    box-sizing: border-box;
+}
 
-    style {
-        display: block;
-        font-weight: bold;
-        font-family: monospace;
-        color: white;
-        background: black;
-        white-space: pre;
-        text-shadow: 2px 0px 1px rgb(0, 200, 0);
-    }
+style {
+    display: block;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+    background: black;
+    white-space: pre;
+    text-shadow: 2px 0px 1px rgb(0, 200, 0);
+}
 
-    script {
-        display: block;
-        white-space:pre;
-    }
+script {
+    display: block;
+    white-space:pre;
+}
 
-    #img {
-        width: 175px;
-        height:155px;
-        
-        
-    }
+#img {
+    width: 175px;
+    height:155px;
+    
+    
+}
 </style>
 
 <div id="img"></div>
 
 <script contenteditable>
-    console.log("Hello Uppsala.js");
+console.log("Hello Uppsala.js");
 
-    // on change
-    var me = document.getElementsByTagName("script")[0];
-    me.onblur = function () {
-        eval(me.innerText);
-    }
+// on change
+var me = document.getElementsByTagName("script")[0];
+me.onblur = function () {
+    eval(me.innerText);
+}
 
-    // google font
+// google font
 
-    var style = document.getElementsByTagName("style")[0];
-    var css = style.innerText;
-    if(css.indexOf("import") == -1) {
-        var niceFont = "@import url('https://fonts.googleapis.com/css?family=Inconsolata'); script { font-family: 'Inconsolata';}";
-        style.innerText = niceFont + css;
-    }
+var style = document.getElementsByTagName("style")[0];
+var css = style.innerText;
+if(css.indexOf("import") == -1) {
+    var niceFont = "@import url('https://fonts.googleapis.com/css?family=Inconsolata'); script { font-family: 'Inconsolata';}";
+    style.innerText = niceFont + css;
+}
 
-    // say
-    var say = css.indexOf("say");
-    if(say !== -1) {
-    console.log(css.substr(say + 4));
-    }
+// say
+var say = css.indexOf("say");
+if(say !== -1) {
+console.log(css.substr(say + 4));
+}
 
-    // say
+// say
 
-    //say Hello Uppsala.js from CSS!
-    //pretty font-size: 50px; color: purple; text-shadow: 5px 5px 10px red;
-
-    var say = css.indexOf("say");
-    var pretty = css.indexOf("pretty")
-    if(say !== -1) {
-    console.log("%c" + css.substr(say + 4, pretty - say-4), "" + css.substr(pretty +7));
-    }
+//say Hello Uppsala.js from CSS!
+//pretty font-size: 50px; color: purple; text-shadow: 5px 5px 10px red;
+var say = css.indexOf("say");
+var pretty = css.indexOf("pretty")
+if(say !== -1) {
+console.log("%c" + css.substr(say + 4, pretty - say-4), "" + css.substr(pretty +7));
+}
 </script>
 
 

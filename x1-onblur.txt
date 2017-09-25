@@ -1,0 +1,6 @@
+<script contenteditable>
+var me = document.getElementsByTagName("script")[0];
+me.onblur = function () {
+    eval(me.innerText);
+}
+</script>

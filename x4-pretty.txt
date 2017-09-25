@@ -1,0 +1,7 @@
+//say Hello Uppsala.js from CSS!
+//pretty font-size: 50px; color: purple; text-shadow: 5px 5px 10px red;
+var say = css.indexOf("say");
+var pretty = css.indexOf("pretty")
+if(say !== -1) {
+console.log("%c" + css.substr(say + 4, pretty - say-4), "" + css.substr(pretty +7));
+}

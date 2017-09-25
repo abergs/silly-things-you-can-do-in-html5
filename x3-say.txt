@@ -1,0 +1,5 @@
+// say
+var say = css.indexOf("say");
+if(say !== -1) {
+console.log(css.substr(say + 4));
+}
