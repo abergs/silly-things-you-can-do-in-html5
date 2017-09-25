@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Really useful site</title>
+
+<style>
+    body{
+    color: red;
+    }
+</style>
+
+</head>
+
+<body>
+    <img src="https://media.giphy.com/media/Pjk8eaZdp0ORO/source.gif" />
+
+    <script>
+        var img2 = new Image();
+        img2.crossOrigin="anonymous";
+
+        img2.onload = function() {
+        var bgpic = "https://media.giphy.com/media/Pjk8eaZdp0ORO/source.gif";
+        //DOMURL.revokeObjectURL(url);
+        console.log("%cHello ajksdljsalkd jsalkd jaslkd jalk jdlka jdsajdlkjsakdalkjs dlkasdj lsadlk asdlk sajd lksajdalad ",
+        "background:url('"+ bgpic + "'); background-repeat: repeat; color:rgba(0,0,0,0); min-width:100vw; line-height:200px; padding-bottom:50px; font-size:200px; display:block;");
+        }
+
+        img2.src = "https://media.giphy.com/media/Pjk8eaZdp0ORO/source.gif";
+</script>
+</body>
+</html>
